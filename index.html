@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Download</title>
+</head>
+<body>
+  <h1>Download PDF</h1>
+  
+  <a id="downloadButton" download>Download PDF</a>
+
+  <script>
+    const pdfUrl = '1_all.pdf';
+
+    window.onload = function () {
+      const downloadButton = document.getElementById('downloadButton');
+      downloadButton.href = pdfUrl;
+    };
+  </script>
+</body>
+</html>
